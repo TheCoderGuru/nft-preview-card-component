@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #0d192b;
+  font-family: "Outfit";
+}
+
+.card {
+  background-color: #14253d;
+  height: 508px;
+  width: 278px;
+  margin: 0 auto;
+  border-radius: 8px;
+  margin-top: 208px;
+}
+
+.card__image {
+  height: 280px;
+  width: auto;
+  border-radius: 21px;
+  padding: 16px;
+}
+
+.card__title {
+  color: white;
+  font-size: 1rem;
+  margin-left: 1rem;
+  font-weight: 500;
+}
+
+.card__description {
+  color: #8bacda;
+  font-weight: 400;
+  font-size: .9rem;
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
+.card__currency {
+  margin: 1rem 1rem;
+  color: #00fff7;
+  font-size: .8rem;
+  font-weight: 500;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.card__offer {
+  margin-top: .9rem;
+  color: #8bacda;
+  font-weight: 400;
+  font-size: .8rem;
+  margin-left: 3.4rem;
+}
+
+.card__profile {
+  height: 32px;
+  width: auto;
+  margin: .5rem 1rem;
+}
+
+.divider {
+  margin: 1rem;
+  opacity: 0.1;
+}
+/*# sourceMappingURL=style.css.map */

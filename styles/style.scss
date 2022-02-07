@@ -1,0 +1,76 @@
+@import 'colors';
+@import 'fonts';
+@import 'media-queries';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $main-bg;
+    font-family: $font-sans;
+}
+
+.card{
+    background-color: $card-bg;
+    height: 508px;
+    width: 278px;
+    margin: 0 auto;
+    border-radius: 8px;
+    margin-top: 208px;
+}
+
+.card__image{
+    height: 280px;
+    width: auto;
+    border-radius: 21px;
+    padding: 16px;
+}
+
+.card__title{
+    color: $white;
+    font-size: 1rem;
+    margin-left: 1rem;
+    font-weight: 500;
+}
+
+.card__description{
+    color: $soft-blue;
+    font-weight: 400;
+    font-size: .9rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+.card__currency{
+    margin: 1rem 1rem;
+    color: $cyan;
+    font-size: .8rem;
+    font-weight: 500;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.card__offer{
+    margin-top: .9rem;
+    color: $soft-blue;
+    font-weight: 400;
+    font-size: .8rem;
+    margin-left: 3.4rem;
+}
+
+.card__profile{
+    height: 32px;
+    width: auto;
+    margin: .5rem 1rem;
+}
+
+.divider{
+    margin: 1rem;
+    opacity: 0.1;
+}
