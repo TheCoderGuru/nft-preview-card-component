@@ -16,10 +16,15 @@ body{
 .card{
     background-color: $card-bg;
     height: 508px;
-    width: 278px;
+    width: 295px;
     margin: 0 auto;
-    border-radius: 8px;
-    margin-top: 208px;
+    border-radius: 20px;
+    margin-top: 108px;
+    box-shadow: 5px 21px 51px 2px rgba(13,25,43,0.75);
+
+    @include tablet{
+        margin-bottom: 4rem;
+    }
 }
 
 .card__image{
@@ -27,25 +32,28 @@ body{
     width: auto;
     border-radius: 21px;
     padding: 16px;
+    margin-left: .5rem;
+    margin-top: .5rem ;
 }
 
 .card__title{
     color: $white;
     font-size: 1rem;
-    margin-left: 1rem;
+    margin-left: 1.5rem;
     font-weight: 500;
 }
 
 .card__description{
     color: $soft-blue;
-    font-weight: 400;
+    font-weight: 300;
     font-size: .9rem;
-    margin-left: 1rem;
+    line-height: 1.4rem;
+    margin-left: 1.5rem;
     margin-top: 1rem;
 }
 
 .card__currency{
-    margin: 1rem 1rem;
+    margin: 1rem 1.5rem;
     color: $cyan;
     font-size: .8rem;
     font-weight: 500;
@@ -60,17 +68,41 @@ body{
     margin-top: .9rem;
     color: $soft-blue;
     font-weight: 400;
-    font-size: .8rem;
-    margin-left: 3.4rem;
+    font-size: .9rem;
+    margin-left: 1.7rem;
+    vertical-align: middle;
+    white-space: nowrap;
 }
 
-.card__profile{
+.card__lower--profile{
     height: 32px;
     width: auto;
-    margin: .5rem 1rem;
+    margin-top: .5rem;
+    margin-left: 1.5rem;
+    border: 1px solid white;
+    border-radius: 50%;
 }
 
 .divider{
-    margin: 1rem;
+    margin: .5rem 1.5rem;
+    width: 82%;
     opacity: 0.1;
+}
+
+.card__lower--author span{
+    color: $soft-blue;
+    font-weight: 500;
+}
+
+.card__lower--author{
+    color: $white;
+    float: right;
+    margin-top: .9rem;
+    font-weight: 300;
+    margin-right: 2.9rem;
+}
+
+i{
+    vertical-align: middle;
+    margin-right: .5rem;
 }
