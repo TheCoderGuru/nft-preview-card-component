@@ -8,6 +8,16 @@
 body {
   background-color: #0d192b;
   font-family: "Outfit";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
 }
 
 .card {
@@ -16,7 +26,6 @@ body {
   width: 295px;
   margin: 0 auto;
   border-radius: 20px;
-  margin-top: 108px;
   -webkit-box-shadow: 5px 21px 51px 2px rgba(13, 25, 43, 0.75);
           box-shadow: 5px 21px 51px 2px rgba(13, 25, 43, 0.75);
 }
@@ -32,8 +41,36 @@ body {
   width: auto;
   border-radius: 21px;
   padding: 16px;
-  margin-left: .5rem;
-  margin-top: .5rem;
+  margin-left: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.image-overlay {
+  position: absolute;
+  border-radius: 10px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  -webkit-transition: 0.25s ease;
+  transition: 0.25s ease;
+  opacity: 0;
+  background-color: rgba(0, 255, 247, 0.5);
+}
+
+.view-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+
+.card__image:hover .image-overlay {
+  opacity: 1;
+  cursor: pointer;
 }
 
 .card__title {
@@ -46,7 +83,7 @@ body {
 .card__description {
   color: #8bacda;
   font-weight: 300;
-  font-size: .9rem;
+  font-size: 0.9rem;
   line-height: 1.4rem;
   margin-left: 1.5rem;
   margin-top: 1rem;
@@ -55,7 +92,7 @@ body {
 .card__currency {
   margin: 1rem 1.5rem;
   color: #00fff7;
-  font-size: .8rem;
+  font-size: 0.8rem;
   font-weight: 500;
 }
 
@@ -67,10 +104,10 @@ body {
 }
 
 .card__offer {
-  margin-top: .9rem;
+  margin-top: 0.9rem;
   color: #8bacda;
   font-weight: 400;
-  font-size: .9rem;
+  font-size: 0.9rem;
   margin-left: 1.7rem;
   vertical-align: middle;
   white-space: nowrap;
@@ -79,14 +116,14 @@ body {
 .card__lower--profile {
   height: 32px;
   width: auto;
-  margin-top: .5rem;
+  margin-top: 0.5rem;
   margin-left: 1.5rem;
   border: 1px solid white;
   border-radius: 50%;
 }
 
 .divider {
-  margin: .5rem 1.5rem;
+  margin: 0.5rem 1.5rem;
   width: 82%;
   opacity: 0.1;
 }
@@ -99,13 +136,13 @@ body {
 .card__lower--author {
   color: white;
   float: right;
-  margin-top: .9rem;
+  margin-top: 0.9rem;
   font-weight: 300;
   margin-right: 2.9rem;
 }
 
 i {
   vertical-align: middle;
-  margin-right: .5rem;
+  margin-right: 0.5rem;
 }
 /*# sourceMappingURL=style.css.map */

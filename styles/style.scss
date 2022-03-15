@@ -1,111 +1,139 @@
-@import 'colors';
-@import 'fonts';
-@import 'media-queries';
+@import "colors";
+@import "fonts";
+@import "media-queries";
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background-color: $main-bg;
-    font-family: $font-sans;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    min-height:100vh;
+body {
+  background-color: $main-bg;
+  font-family: $font-sans;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
-.card{
-    background-color: $card-bg;
-    height: 508px;
-    width: 295px;
-    margin: 0 auto;
-    border-radius: 20px;
-    box-shadow: 5px 21px 51px 2px rgba(13,25,43,0.75);
+.card {
+  background-color: $card-bg;
+  height: 508px;
+  width: 295px;
+  margin: 0 auto;
+  border-radius: 20px;
+  box-shadow: 5px 21px 51px 2px rgba(13, 25, 43, 0.75);
 
-    @include tablet{
-        margin-bottom: 4rem;
-    }
+  @include tablet {
+    margin-bottom: 4rem;
+  }
 }
 
-.card__image{
-    height: 280px;
-    width: auto;
-    border-radius: 21px;
-    padding: 16px;
-    margin-left: .5rem;
-    margin-top: .5rem ;
+.card__image {
+  height: 280px;
+  width: auto;
+  border-radius: 21px;
+  padding: 16px;
+  margin-left: 0.5rem;
+  margin-top: 0.5rem;
 }
 
-.card__title{
-    color: $white;
-    font-size: 1rem;
-    margin-left: 1.5rem;
-    font-weight: 500;
+.image-overlay {
+  position: absolute;
+  border-radius: 10px;
+  top: 0;
+
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  width: 100%;
+  transition: 0.25s ease;
+  opacity: 0;
+  background-color: hsla(178, 100%, 50%, 0.5);
+}
+.view-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
 }
 
-.card__description{
-    color: $soft-blue;
-    font-weight: 300;
-    font-size: .9rem;
-    line-height: 1.4rem;
-    margin-left: 1.5rem;
-    margin-top: 1rem;
+.card__image:hover .image-overlay {
+  opacity: 1;
+  cursor: pointer;
 }
 
-.card__currency{
-    margin: 1rem 1.5rem;
-    color: $cyan;
-    font-size: .8rem;
-    font-weight: 500;
+.card__title {
+  color: $white;
+  font-size: 1rem;
+  margin-left: 1.5rem;
+  font-weight: 500;
 }
 
-.grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.card__description {
+  color: $soft-blue;
+  font-weight: 300;
+  font-size: 0.9rem;
+  line-height: 1.4rem;
+  margin-left: 1.5rem;
+  margin-top: 1rem;
 }
 
-.card__offer{
-    margin-top: .9rem;
-    color: $soft-blue;
-    font-weight: 400;
-    font-size: .9rem;
-    margin-left: 1.7rem;
-    vertical-align: middle;
-    white-space: nowrap;
+.card__currency {
+  margin: 1rem 1.5rem;
+  color: $cyan;
+  font-size: 0.8rem;
+  font-weight: 500;
 }
 
-.card__lower--profile{
-    height: 32px;
-    width: auto;
-    margin-top: .5rem;
-    margin-left: 1.5rem;
-    border: 1px solid white;
-    border-radius: 50%;
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
-.divider{
-    margin: .5rem 1.5rem;
-    width: 82%;
-    opacity: 0.1;
+.card__offer {
+  margin-top: 0.9rem;
+  color: $soft-blue;
+  font-weight: 400;
+  font-size: 0.9rem;
+  margin-left: 1.7rem;
+  vertical-align: middle;
+  white-space: nowrap;
 }
 
-.card__lower--author span{
-    color: $soft-blue;
-    font-weight: 500;
+.card__lower--profile {
+  height: 32px;
+  width: auto;
+  margin-top: 0.5rem;
+  margin-left: 1.5rem;
+  border: 1px solid white;
+  border-radius: 50%;
 }
 
-.card__lower--author{
-    color: $white;
-    float: right;
-    margin-top: .9rem;
-    font-weight: 300;
-    margin-right: 2.9rem;
+.divider {
+  margin: 0.5rem 1.5rem;
+  width: 82%;
+  opacity: 0.1;
 }
 
-i{
-    vertical-align: middle;
-    margin-right: .5rem;
+.card__lower--author span {
+  color: $soft-blue;
+  font-weight: 500;
+}
+
+.card__lower--author {
+  color: $white;
+  float: right;
+  margin-top: 0.9rem;
+  font-weight: 300;
+  margin-right: 2.9rem;
+}
+
+i {
+  vertical-align: middle;
+  margin-right: 0.5rem;
 }
