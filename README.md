@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Visit the code](https://github.com/TheCoderGuru/nft-preview-card-component)
-- Live Site URL: [Preview the website](https://nft-preview-card-component-teal.vercel.app/)
+- Solution URL: [Check out the code](https://github.com/TheCoderGuru/nft-preview-card-component)
+- Live Site URL: [Visit the live site](https://nft-preview-card-component-teal.vercel.app/)
 
 ## My process
 
@@ -49,12 +49,12 @@ Users should be able to:
 
 ### What I learned
 
-I learnt the css pseudoelement ```:hover``` will attempting this challenge in addition to the concept behind css variables.
+This challenge reiterated the concept of positioning items to the top of a container using ```position: absolute; top: 0;``` on the respective image and then ```position: relative``` on the container that you would like the image to be relative to.
 
 
 ### Continued development
 
-I plan to keep using css variables and css pseudoelements as much as possible in order to gain more familiarity with it.
+I plan to keep using css variables and css pseudoelements as much as possible in order to gain more familiarity in addition to its usage and good practices when using it.
 
 ### Useful resources
 
@@ -71,4 +71,4 @@ I plan to keep using css variables and css pseudoelements as much as possible in
 
 I would like to acknowledge my friend in code [Mariem Bchir](https://github.com/Mabchir) from the Frontend Mentor community for her helpful feedback given to me on this solution.
 
-Check out her [profile](https://www.frontendmentor.io/profile/Mabchir) on Frontend Mentor
+Check out her [profile](https://www.frontendmentor.io/profile/Mabchir) on Frontend Mentor and her [Github](https://www.github.com/Mabchir)

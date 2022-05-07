@@ -1,35 +1,26 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-  background-color: #0d192b;
+  background-color: hsl(217deg, 54%, 11%);
   font-family: "Outfit";
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   min-height: 100vh;
 }
 
 .card {
-  background-color: #14253d;
+  background-color: hsl(216deg, 50%, 16%);
   height: 508px;
   width: 295px;
   margin: 0 auto;
   border-radius: 20px;
-  -webkit-box-shadow: 5px 21px 51px 2px rgba(13, 25, 43, 0.75);
-          box-shadow: 5px 21px 51px 2px rgba(13, 25, 43, 0.75);
+  box-shadow: 5px 21px 51px 2px rgba(13, 25, 43, 0.75);
 }
-
 @media screen and (max-width: 375px) {
   .card {
     margin-bottom: 4rem;
@@ -53,10 +44,9 @@ body {
   right: 0;
   bottom: 0;
   width: 100%;
-  -webkit-transition: 0.25s ease;
   transition: 0.25s ease;
   opacity: 0;
-  background-color: rgba(0, 255, 247, 0.5);
+  background-color: hsla(178deg, 100%, 50%, 0.5);
 }
 
 .view-icon {
@@ -74,14 +64,14 @@ body {
 }
 
 .card__title {
-  color: white;
+  color: hsl(0deg, 0%, 100%);
   font-size: 1rem;
   margin-left: 1.5rem;
   font-weight: 500;
 }
 
 .card__description {
-  color: #8bacda;
+  color: hsl(215deg, 51%, 70%);
   font-weight: 300;
   font-size: 0.9rem;
   line-height: 1.4rem;
@@ -91,21 +81,19 @@ body {
 
 .card__currency {
   margin: 1rem 1.5rem;
-  color: #00fff7;
+  color: hsl(178deg, 100%, 50%);
   font-size: 0.8rem;
   font-weight: 500;
 }
 
 .grid {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 
 .card__offer {
   margin-top: 0.9rem;
-  color: #8bacda;
+  color: hsl(215deg, 51%, 70%);
   font-weight: 400;
   font-size: 0.9rem;
   margin-left: 1.7rem;
@@ -129,12 +117,12 @@ body {
 }
 
 .card__lower--author span {
-  color: #8bacda;
+  color: hsl(215deg, 51%, 70%);
   font-weight: 500;
 }
 
 .card__lower--author {
-  color: white;
+  color: hsl(0deg, 0%, 100%);
   float: right;
   margin-top: 0.9rem;
   font-weight: 300;
@@ -145,4 +133,3 @@ i {
   vertical-align: middle;
   margin-right: 0.5rem;
 }
-/*# sourceMappingURL=style.css.map */
